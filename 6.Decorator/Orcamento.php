@@ -1,12 +1,22 @@
-<?php 
-class Orcamento {
-	private $valor;
+<?php
+class Conta {
 
-	function __construct ($valor){
+	private $valor;
+	private $itens;
+
+	function __construct($valor){
 		$this->valor = $valor;
 	}
 
-	public function getValor(){
-		return $this->valor;
+	public function getNome(){
+		return $this->nome;
+	}
+
+	public function getItens(){
+		return $this->itens;
+	}
+
+	public function adicionaItem(Item $itens){
+		$this->itens[] = $itens;
 	}
 }
