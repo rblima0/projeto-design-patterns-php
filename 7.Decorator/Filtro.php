@@ -3,7 +3,7 @@ abstract class Filtro {
 
 	protected $filtro;
 
-	function __construct ($filtro){
+	function __construct ($filtro = null){
 		$this->filtro = $filtro;
 	}
 
