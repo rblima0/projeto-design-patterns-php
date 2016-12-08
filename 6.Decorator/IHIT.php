@@ -1,5 +1,11 @@
 <?php
 class IHIT extends TemplateImpostoCondicional {
+
+	private $proximoImposto;
+
+	function __construct(Imposto $proximoImposto = null){
+		$this->proximoImposto = $proximoImposto;
+	}
 	
 	protected function deveUsarMaximaTaxacao(Orcamento $orcamento){
 		$emOrcamento = array();

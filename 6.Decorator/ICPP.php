@@ -1,5 +1,11 @@
 <?php
 class ICPP extends TemplateImpostoCondicional {
+
+	private $proximoImposto;
+
+	function __construct(Imposto $proximoImposto = null){
+		$this->proximoImposto = $proximoImposto;
+	}
 	
 	protected function deveUsarMaximaTaxacao(Orcamento $orcamento) {
 		return $orcamento->getValor() > 500;
