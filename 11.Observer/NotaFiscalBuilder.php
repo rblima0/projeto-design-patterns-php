@@ -44,7 +44,7 @@ class NotaFiscalBuilder {
     }
 
     public function constroi(){
-    	return new NotaFiscal($this->razaoSocial, $this->cnpj, $this->valorBruto, $this->impostos, $this->data, $this->observacoes, $this->todosItens);
+    	$notaFiscal = new NotaFiscal($this->razaoSocial, $this->cnpj, $this->valorBruto, $this->impostos, $this->data, $this->observacoes, $this->todosItens);
 
         foreach($this->todasAcoesASeremExecutadas as $acao) {
             $acao->executa($notaFiscal);

@@ -10,13 +10,13 @@ class NotaFiscal {
 	private $itens;
 
 	function __construct($razaoSocial, $cnpj, $valorBruto, $impostos, $dataDeEmissao, $observacoes, $itens){
-		$razaoSocial = $this->razaoSocial;
-		$cnpj = $this->cnpj;
-		$valorBruto = $this->valorBruto;
-		$impostos = $this->impostos;
-		$dataDeEmissao = $this->dataDeEmissao;
-		$observacoes = $this->observacoes;
-		$itens = $this->itens;
+		$this->razaoSocial = $razaoSocial;
+		$this->cnpj = $cnpj;
+		$this->valorBruto = $valorBruto;
+		$this->impostos = $impostos;
+		$this->dataDeEmissao = $dataDeEmissao;
+		$this->observacoes = $observacoes;
+		$this->itens = $itens;
 	}
 
 

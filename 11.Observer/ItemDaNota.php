@@ -5,8 +5,8 @@ class ItemDaNota {
 	private $valor;
 
 	function __construct($descricao, $valor){
-		$descricao = $this->descricao;
-		$valor = $this->valor;
+		$this->descricao = $descricao;
+		$this->valor = $valor;
 	}
 
 
